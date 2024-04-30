@@ -1,4 +1,5 @@
-# meta 광고 라이브러리 스크래핑
+# meta 광고 라이브러리 스크래핑 
+# -> 실행 collector.py
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -11,7 +12,7 @@ import time
 driver = webdriver.Chrome()
 
 # Facebook 광고 라이브러리 URL
-driver.get("https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&page_ids[0]=889902564415443&q=%EC%88%A8%EA%B3%A0&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped&search_type=keyword_unordered&media_type=all")
+driver.get("https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&q=%ED%86%A0%EC%8A%A4&sort_data[direction]=desc&sort_data[mode]=relevancy_monthly_grouped&search_type=keyword_unordered&media_type=all")
 
 # 사용자로부터 Enter 입력 대기
 input("Press Enter to start scraping")
